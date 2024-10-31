@@ -1,0 +1,1 @@
+- reset git from origin https://stackoverflow.com/a/50033528/3681874
