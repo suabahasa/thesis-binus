@@ -37,8 +37,8 @@ _LICENSE = "Apache License, Version 2.0"
 
 _URLS = {
     # _DATASETNAME: "https://drive.google.com/uc?id=1OgYbPfXFAv3TbwP1Qcwt_CC9cVWSJaco",
-    _DATASETNAME: "https://f000.backblazeb2.com/file/thesis-binus/datasets.tar.gz",
-    # _DATASETNAME: "./datasets.tar.gz",
+    # _DATASETNAME: "https://f000.backblazeb2.com/file/thesis-binus/datasets.tar.gz",
+    _DATASETNAME: "https://www.kaggle.com/api/v1/datasets/download/siagian/indosum",
 }
 
 _SUPPORTED_TASKS = [Tasks.SUMMARIZATION]
@@ -115,21 +115,18 @@ class IndoSUM(datasets.GeneratorBasedBuilder):
 
         urls = _URLS[_DATASETNAME]
 
-        # data_dir = Path(dl_manager.extract(urls))
         data_dir = Path(dl_manager.download_and_extract(urls))
 
         location = {
-            "train": "indosum/train.0{fold_number}.jsonl",
-            "test": "indosum/test.0{fold_number}.jsonl",
-            "dev": "indosum/dev.0{fold_number}.jsonl"
+            # "train": "indosum/train.0{fold_number}.jsonl",
+            # "test": "indosum/test.0{fold_number}.jsonl",
+            # "dev": "indosum/dev.0{fold_number}.jsonl"
+            "train": "train.0{fold_number}.jsonl",
+            "test": "test.0{fold_number}.jsonl",
+            "dev": "dev.0{fold_number}.jsonl"
         }
 
         data_dir = dl_manager.download_and_extract(urls)
-        
-        # data_dir = dl_manager.extract(urls)
-        
-        # this file directory
-        # data_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
 
         return [
             datasets.SplitGenerator(
@@ -190,7 +187,7 @@ class IndoSUM(datasets.GeneratorBasedBuilder):
                 for each_data in f.iter():
                     full_paragraph, full_summary = self._get_full_paragraph_and_summary(each_data)
                     ex = {
-                        # "id": each_data["id"],
+                        "id": each_data["id"],
                         "document": full_paragraph,
                         "summary": full_summary
                     }
