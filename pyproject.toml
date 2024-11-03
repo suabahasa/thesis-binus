@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = ">=3.9.6"
 dependencies = [
     "accelerate>=1.0.1",
+    "bertopic>=0.16.4",
     "datasets>=3.0.2",
     "evaluate>=0.4.3",
     "indobenchmark-toolkit>=0.1.7",
