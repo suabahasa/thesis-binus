@@ -125,7 +125,8 @@
     git config --global user.name "Joshua Gugun Siagian"
     git config --global user.email joshua.siagian@binus.ac.id
 
-    # do manually gh auth login
+    git lfs install
+
 
 # ==================================================================
 # Python
@@ -363,3 +364,22 @@
     echo "export PATH=${PATH}" >> ~/.bashrc
     echo "export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}" >> ~/.bashrc
     echo "export CUDA_HOME=${CUDA_HOME}" >> ~/.bashrc
+
+
+# ==================================================================
+# Finalize
+# ------------------------------------------------------------------
+
+    # Cleanup
+    sudo apt autoremove -y
+    sudo updatedb
+
+    # Reboot
+    sudo reboot
+
+
+# ==================================================================
+# What's next?
+# ------------------------------------------------------------------
+
+    # do `gh auth login`

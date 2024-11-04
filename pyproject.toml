@@ -15,6 +15,7 @@ dependencies = [
     "nltk>=3.9.1",
     "nusacrowd>=0.1.4",
     "rouge-score>=0.1.2",
+    "sastrawi>=1.0.1",
     "seacrowd>=0.2.2",
     "sentencepiece>=0.2.0",
     "tokenizers>=0.20.1",

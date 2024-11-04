@@ -2570,6 +2570,15 @@ wheels = [
 ]
 
 [[package]]
+name = "sastrawi"
+version = "1.0.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/64/e8/abff41a085ec33b1a55f2065e0ebe1d6c9b6635559a94b3774c8c81e88aa/Sastrawi-1.0.1.zip", hash = "sha256:62badb523e6e273f92eb6d53f5f3d4c0aa9ffcf1ceba69ab3dba5b7a0da02c56", size = 211653 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/6f/4b/bab676953da3103003730b8fcdfadbdd20f333d4add10af949dd5c51e6ed/Sastrawi-1.0.1-py2.py3-none-any.whl", hash = "sha256:ac3d1f442ae8f33fd0f59387eb33a1a5121241f028c318c60820f26bd032d93b", size = 209671 },
+]
+
+[[package]]
 name = "scikit-learn"
 version = "1.5.2"
 source = { registry = "https://pypi.org/simple" }
@@ -2859,6 +2868,7 @@ dependencies = [
     { name = "nltk" },
     { name = "nusacrowd" },
     { name = "rouge-score" },
+    { name = "sastrawi" },
     { name = "seacrowd" },
     { name = "sentencepiece" },
     { name = "tokenizers" },
@@ -2883,6 +2893,7 @@ requires-dist = [
     { name = "nltk", specifier = ">=3.9.1" },
     { name = "nusacrowd", specifier = ">=0.1.4" },
     { name = "rouge-score", specifier = ">=0.1.2" },
+    { name = "sastrawi", specifier = ">=1.0.1" },
     { name = "seacrowd", specifier = ">=0.2.2" },
     { name = "sentencepiece", specifier = ">=0.2.0" },
     { name = "tokenizers", specifier = ">=0.20.1" },
