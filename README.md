@@ -4,7 +4,8 @@
 
 ## getting started
 
-- install uv
+- clone the repository
+- run the setup.sh script 
 - run `uv venv` to create a virtual environment
 - activate the virtual environment
 - run `uv sync` to install the dependencies

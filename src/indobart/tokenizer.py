@@ -12,19 +12,25 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License
+
+# https://github.com/indobenchmark/indobenchmark-toolkit
+
 """ Tokenization classes for IndoNLG model."""
 
 import os
 import shutil
-import numpy as np
-from typing import TYPE_CHECKING, Any, Dict, List, NamedTuple, Optional, Sequence, Tuple, Union
-
 from collections.abc import Mapping
-import sentencepiece as spm
+from typing import Dict, List, Optional, Tuple, Union
 
-from transformers import PreTrainedTokenizer, BatchEncoding
+import numpy as np
+import sentencepiece as spm
+from transformers import (
+    BatchEncoding,
+    PreTrainedTokenizer,
+    is_tf_available,
+    is_torch_available,
+)
 from transformers.tokenization_utils import PaddingStrategy, TensorType
-from transformers import is_tf_available, is_torch_available
 from transformers.utils import logging, to_py_obj
 from transformers.utils.generic import _is_tensorflow, _is_torch
 
@@ -230,9 +236,6 @@ class IndoNLGTokenizer(PreTrainedTokenizer):
                 input_batch['labels'] = labels
                 
                 return input_batch
-
-    def __len__(self):
-        return max(self.special_ids_to_tokens) + 1
     
     def get_special_tokens_mask(
         self, token_ids_0: List[int], token_ids_1: Optional[List[int]] = None, already_has_special_tokens: bool = False
