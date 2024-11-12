@@ -1,1 +1,1 @@
-{"eval_loss": 0.6712876558303833, "eval_rouge1": 0.6825217071651952, "eval_rouge2": 0.6017272220932317, "eval_rougeL": 0.6466885740274536, "eval_rougeLsum": 0.6730199732373787, "eval_runtime": 873.8848, "eval_samples_per_second": 4.305, "eval_steps_per_second": 0.539, "epoch": 3.0}
+{"eval_loss": 0.6712408065795898, "eval_rouge1": 0.6813039421192061, "eval_rouge2": 0.600212172181025, "eval_rougeL": 0.6452167875185628, "eval_rougeLsum": 0.6714865512581554, "eval_runtime": 1106.0189, "eval_samples_per_second": 3.401, "eval_steps_per_second": 0.426, "epoch": 3.0}
