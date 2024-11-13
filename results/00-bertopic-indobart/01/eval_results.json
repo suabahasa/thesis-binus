@@ -1,0 +1,1 @@
+{"eval_loss": 0.5529609322547913, "eval_rouge1": 0.6364351208505599, "eval_rouge2": 0.5605365068088425, "eval_rougeL": 0.6020757657731941, "eval_rougeLsum": 0.6271883521878868, "eval_runtime": 793.0146, "eval_samples_per_second": 4.744, "eval_steps_per_second": 0.594, "epoch": 3.0}

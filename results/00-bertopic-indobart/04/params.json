@@ -1,0 +1,1 @@
+{"output_dir": "./results/00-bertopic-indobart/04", "per_device_batch_size": 8, "learning_rate": 3.75e-05, "num_train_epochs": 3, "generation_max_length": 90}
