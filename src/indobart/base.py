@@ -1,4 +1,4 @@
-from transformers import AutoModelForSeq2SeqLM, BartConfig, AutoConfig
+from transformers import AutoModelForSeq2SeqLM, BartConfig, AutoConfig, MBartConfig
 from .tokenizer import IndoNLGTokenizer
 
 def get_model():
@@ -10,4 +10,4 @@ def get_tokenizer():
 
 def get_config():
     # return AutoConfig.from_pretrained("indobenchmark/indobart-v2")
-    return BartConfig.from_pretrained("indobenchmark/indobart-v2")
+    return MBartConfig.from_pretrained("indobenchmark/indobart-v2")
