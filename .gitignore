@@ -14,4 +14,4 @@ wheels/
 
 # Cache
 
-**/dim_cache/
+# **/dim_cache/
