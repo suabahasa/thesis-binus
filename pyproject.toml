@@ -8,6 +8,7 @@ dependencies = [
     "accelerate>=1.0.1",
     "bertopic>=0.16.4",
     "datasets>=3.0.2",
+    "diskcache>=5.6.3",
     "evaluate>=0.4.3",
     "indobenchmark-toolkit>=0.1.7",
     "ipykernel>=6.29.5",
